@@ -50,7 +50,9 @@ def graph(slugs):
         plt.xlabel('Days Ago')
         plt.ylabel('Average Price (ETH)')
         plt.legend(loc="upper left")
-        plt.show()
+        plt.show()                                                                                    # Show the plot
     except:
         print("There was an error in plotting these collections.\n\nMake sure the slugs are typed exactly as they appear in the collection's OpenSea URL.")
         quit()
+        
+graph(collections)                                                                                    # Run the function
